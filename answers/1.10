@@ -1,0 +1,2 @@
+"docker exec -it blog-server bash" 
+"cat /etc/*release" 
