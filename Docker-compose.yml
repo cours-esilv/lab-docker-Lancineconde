@@ -1,0 +1,16 @@
+version: '3'
+services:
+  my-service:
+    image: my-python-app
+    ports:
+      - "8080:8080"
+      - "8081:8080"  # Additional port mapping for the second instance
+      - "8082:8080"  # Additional port mapping for the third instance
+    environment:
+      MY_ENV_VARIABLE: "value"
+  front-end:
+    image: front-end-image
+    ports:
+      - "80:80"
+    environment:
+      FRONT_ENV_VARIABLE: "value"
